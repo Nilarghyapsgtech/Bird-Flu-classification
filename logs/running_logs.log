@@ -1,2 +1,40 @@
 [2024-08-20 20:32:17,775:INFO:main:Welsome]
 [2024-08-21 02:11:41,915:INFO:main:Hi how ar you]
+[2024-08-23 12:23:28,811:INFO:main:Hi how ar you]
+[2024-08-23 12:23:43,560:INFO:main:Hi how ar you]
+[2024-08-23 12:25:32,009:INFO:main:Hi how ar you]
+[2024-08-24 01:36:42,856:INFO:main:>>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-08-24 01:36:42,857:INFO:common:yaml file: config\config.yaml loaded successfully]
+[2024-08-24 01:36:42,857:INFO:common:yaml file: params.yaml loaded successfully]
+[2024-08-24 01:36:42,862:INFO:common:created directory at: artifacts]
+[2024-08-24 01:36:42,864:INFO:common:created directory at: artifacts/data_ingestion]
+[2024-08-24 01:36:55,322:INFO:data_ingestion:artifacts/data_ingestion/data.zip download: with following info: 
+ Connection: close
+Content-Length: 11616915
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "adf745abc03891fe493c3be264ec012691fe3fa21d861f35a27edbe6d86a76b1"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: B836:2C1757:E697D:12015F:66C8D96D
+Accept-Ranges: bytes
+Date: Fri, 23 Aug 2024 20:06:43 GMT
+Via: 1.1 varnish
+X-Served-By: cache-maa10234-MAA
+X-Cache: HIT
+X-Cache-Hits: 0
+X-Timer: S1724443604.507291,VS0,VE268
+Vary: Authorization,Accept-Encoding,Origin
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: 6459dc40faa15bb71ddc33c727d32ca612e36c88
+Expires: Fri, 23 Aug 2024 20:11:43 GMT
+Source-Age: 0
+
+]
+[2024-08-24 01:36:55,917:INFO:main:>>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
