@@ -60,3 +60,895 @@ x==========x]
 [2024-08-25 08:56:23,508:INFO:common:created directory at: artifacts/prepare_base_model]
 [2024-08-25 08:56:31,659:WARNING:saving_api:You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
 [2024-08-25 08:56:31,974:WARNING:saving_api:You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2024-08-25 09:30:10,215:INFO:utils:Note: NumExpr detected 12 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.]
+[2024-08-25 09:30:10,216:INFO:utils:NumExpr defaulting to 8 threads.]
+[2024-08-25 09:30:10,856:INFO:main:>>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-08-25 09:30:10,858:INFO:common:yaml file: config\config.yaml loaded successfully]
+[2024-08-25 09:30:10,860:INFO:common:yaml file: params.yaml loaded successfully]
+[2024-08-25 09:30:10,860:INFO:common:created directory at: artifacts]
+[2024-08-25 09:30:10,861:INFO:common:created directory at: artifacts/data_ingestion]
+[2024-08-25 09:30:14,246:INFO:data_ingestion:artifacts/data_ingestion/data.zip download: with following info: 
+ Connection: close
+Content-Length: 11616915
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "adf745abc03891fe493c3be264ec012691fe3fa21d861f35a27edbe6d86a76b1"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: 6B67:2A13E2:255A33:315B5A:66CB1B13
+Accept-Ranges: bytes
+Date: Sun, 25 Aug 2024 11:52:53 GMT
+Via: 1.1 varnish
+X-Served-By: cache-maa10236-MAA
+X-Cache: MISS
+X-Cache-Hits: 0
+X-Timer: S1724586772.051826,VS0,VE1175
+Vary: Authorization,Accept-Encoding,Origin
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: a3494fc9cccae6187fd4f16dd50ea8610a0b6f65
+Expires: Sun, 25 Aug 2024 11:57:53 GMT
+Source-Age: 1
+
+]
+[2024-08-25 09:30:15,086:INFO:main:>>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-08-25 09:30:15,087:INFO:main:*******************]
+[2024-08-25 09:30:15,087:INFO:main:>>>>>> stage Prepare base model started <<<<<<]
+[2024-08-25 09:30:15,088:INFO:common:yaml file: config\config.yaml loaded successfully]
+[2024-08-25 09:30:15,090:INFO:common:yaml file: params.yaml loaded successfully]
+[2024-08-25 09:30:15,090:INFO:common:created directory at: artifacts]
+[2024-08-25 09:30:15,092:INFO:common:created directory at: artifacts/prepare_base_model]
+[2024-08-25 09:30:16,497:WARNING:saving_api:You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2024-08-25 09:30:17,163:WARNING:saving_api:You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2024-08-25 09:30:17,498:INFO:main:>>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2024-08-25 09:43:58,914:INFO:common:yaml file: config\config.yaml loaded successfully]
+[2024-08-25 09:43:58,923:INFO:common:yaml file: params.yaml loaded successfully]
+[2024-08-25 09:43:58,933:INFO:common:created directory at: artifacts]
+[2024-08-25 09:43:58,941:INFO:common:created directory at: artifacts\prepare_callbacks\checkpoint_dir]
+[2024-08-25 09:43:58,944:INFO:common:created directory at: artifacts\prepare_callbacks\tensorboard_log_dir]
+[2024-08-25 09:45:36,399:INFO:common:yaml file: config\config.yaml loaded successfully]
+[2024-08-25 09:45:36,401:INFO:common:yaml file: params.yaml loaded successfully]
+[2024-08-25 09:45:36,402:INFO:common:created directory at: artifacts]
+[2024-08-25 09:45:36,403:INFO:common:created directory at: artifacts\prepare_callbacks\checkpoint_dir]
+[2024-08-25 09:45:36,404:INFO:common:created directory at: artifacts\prepare_callbacks\tensorboard_log_dir]
+[2024-08-25 09:45:37,348:INFO:common:yaml file: config\config.yaml loaded successfully]
+[2024-08-25 09:45:37,351:INFO:common:yaml file: params.yaml loaded successfully]
+[2024-08-25 09:45:37,352:INFO:common:created directory at: artifacts]
+[2024-08-25 09:45:37,353:INFO:common:created directory at: artifacts\prepare_callbacks\checkpoint_dir]
+[2024-08-25 09:45:37,355:INFO:common:created directory at: artifacts\prepare_callbacks\tensorboard_log_dir]
+[2024-08-25 09:50:41,119:INFO:common:yaml file: config\config.yaml loaded successfully]
+[2024-08-25 09:50:41,121:INFO:common:yaml file: params.yaml loaded successfully]
+[2024-08-25 09:50:41,123:INFO:common:created directory at: artifacts]
+[2024-08-25 09:50:41,127:INFO:common:created directory at: artifacts\prepare_callbacks\checkpoint_dir]
+[2024-08-25 09:50:41,130:INFO:common:created directory at: artifacts\prepare_callbacks\tensorboard_log_dir]
+[2024-08-25 11:57:03,629:INFO:common:yaml file: config\config.yaml loaded successfully]
+[2024-08-25 11:57:03,634:INFO:common:yaml file: params.yaml loaded successfully]
+[2024-08-25 11:57:03,637:INFO:common:created directory at: artifacts]
+[2024-08-25 11:57:03,639:INFO:common:created directory at: artifacts\prepare_callbacks\checkpoint_dir]
+[2024-08-25 11:57:03,640:INFO:common:created directory at: artifacts\prepare_callbacks\tensorboard_log_dir]
+[2024-08-25 11:59:21,655:INFO:common:yaml file: config\config.yaml loaded successfully]
+[2024-08-25 11:59:21,669:INFO:common:yaml file: params.yaml loaded successfully]
+[2024-08-25 11:59:21,673:INFO:common:created directory at: artifacts]
+[2024-08-25 11:59:21,681:INFO:common:created directory at: artifacts\prepare_callbacks\checkpoint_dir]
+[2024-08-25 11:59:21,685:INFO:common:created directory at: artifacts\prepare_callbacks\tensorboard_log_dir]
+[2024-08-25 11:59:39,969:INFO:common:yaml file: config\config.yaml loaded successfully]
+[2024-08-25 11:59:39,972:INFO:common:yaml file: params.yaml loaded successfully]
+[2024-08-25 11:59:39,975:INFO:common:created directory at: artifacts]
+[2024-08-25 11:59:39,977:INFO:common:created directory at: artifacts\prepare_callbacks\checkpoint_dir]
+[2024-08-25 11:59:39,981:INFO:common:created directory at: artifacts\prepare_callbacks\tensorboard_log_dir]
+[2024-08-25 14:48:09,434:INFO:common:yaml file: config\config.yaml loaded successfully]
+[2024-08-25 14:48:09,444:INFO:common:yaml file: params.yaml loaded successfully]
+[2024-08-25 14:48:09,449:INFO:common:created directory at: artifacts]
+[2024-08-25 14:48:09,454:INFO:common:created directory at: artifacts\prepare_callbacks\checkpoint_dir]
+[2024-08-25 14:48:09,456:INFO:common:created directory at: artifacts\prepare_callbacks\tensorboard_log_dir]
+[2024-08-25 14:48:09,468:INFO:common:created directory at: artifacts\training]
+[2024-08-25 14:48:56,548:INFO:common:yaml file: config\config.yaml loaded successfully]
+[2024-08-25 14:48:56,550:INFO:common:yaml file: params.yaml loaded successfully]
+[2024-08-25 14:48:56,552:INFO:common:created directory at: artifacts]
+[2024-08-25 14:48:56,553:INFO:common:created directory at: artifacts\prepare_callbacks\checkpoint_dir]
+[2024-08-25 14:48:56,555:INFO:common:created directory at: artifacts\prepare_callbacks\tensorboard_log_dir]
+[2024-08-25 14:48:56,556:INFO:common:created directory at: artifacts\training]
+[2024-08-25 14:49:03,502:INFO:common:yaml file: config\config.yaml loaded successfully]
+[2024-08-25 14:49:03,505:INFO:common:yaml file: params.yaml loaded successfully]
+[2024-08-25 14:49:03,507:INFO:common:created directory at: artifacts]
+[2024-08-25 14:49:03,508:INFO:common:created directory at: artifacts\prepare_callbacks\checkpoint_dir]
+[2024-08-25 14:49:03,509:INFO:common:created directory at: artifacts\prepare_callbacks\tensorboard_log_dir]
+[2024-08-25 14:49:03,510:INFO:common:created directory at: artifacts\training]
+[2024-08-25 14:49:23,797:INFO:common:yaml file: config\config.yaml loaded successfully]
+[2024-08-25 14:49:23,800:INFO:common:yaml file: params.yaml loaded successfully]
+[2024-08-25 14:49:23,801:INFO:common:created directory at: artifacts]
+[2024-08-25 14:49:23,803:INFO:common:created directory at: artifacts\prepare_callbacks\checkpoint_dir]
+[2024-08-25 14:49:23,804:INFO:common:created directory at: artifacts\prepare_callbacks\tensorboard_log_dir]
+[2024-08-25 14:49:23,805:INFO:common:created directory at: artifacts\training]
+[2024-08-25 14:49:24,592:INFO:common:yaml file: config\config.yaml loaded successfully]
+[2024-08-25 14:49:24,594:INFO:common:yaml file: params.yaml loaded successfully]
+[2024-08-25 14:49:24,596:INFO:common:created directory at: artifacts]
+[2024-08-25 14:49:24,596:INFO:common:created directory at: artifacts\prepare_callbacks\checkpoint_dir]
+[2024-08-25 14:49:24,597:INFO:common:created directory at: artifacts\prepare_callbacks\tensorboard_log_dir]
+[2024-08-25 14:49:24,598:INFO:common:created directory at: artifacts\training]
+[2024-08-25 14:50:19,297:INFO:common:yaml file: config\config.yaml loaded successfully]
+[2024-08-25 14:50:19,299:INFO:common:yaml file: params.yaml loaded successfully]
+[2024-08-25 14:50:19,301:INFO:common:created directory at: artifacts]
+[2024-08-25 14:50:19,302:INFO:common:created directory at: artifacts\prepare_callbacks\checkpoint_dir]
+[2024-08-25 14:50:19,303:INFO:common:created directory at: artifacts\prepare_callbacks\tensorboard_log_dir]
+[2024-08-25 14:50:19,304:INFO:common:created directory at: artifacts\training]
+[2024-08-25 14:50:29,899:INFO:common:yaml file: config\config.yaml loaded successfully]
+[2024-08-25 14:50:29,902:INFO:common:yaml file: params.yaml loaded successfully]
+[2024-08-25 14:50:29,903:INFO:common:created directory at: artifacts]
+[2024-08-25 14:50:29,905:INFO:common:created directory at: artifacts\prepare_callbacks\checkpoint_dir]
+[2024-08-25 14:50:29,907:INFO:common:created directory at: artifacts\prepare_callbacks\tensorboard_log_dir]
+[2024-08-25 14:50:31,304:INFO:common:yaml file: config\config.yaml loaded successfully]
+[2024-08-25 14:50:31,306:INFO:common:yaml file: params.yaml loaded successfully]
+[2024-08-25 14:50:31,307:INFO:common:created directory at: artifacts]
+[2024-08-25 14:50:31,309:INFO:common:created directory at: artifacts\prepare_callbacks\checkpoint_dir]
+[2024-08-25 14:50:31,310:INFO:common:created directory at: artifacts\prepare_callbacks\tensorboard_log_dir]
+[2024-08-25 14:50:42,840:INFO:common:yaml file: config\config.yaml loaded successfully]
+[2024-08-25 14:50:42,843:INFO:common:yaml file: params.yaml loaded successfully]
+[2024-08-25 14:50:42,845:INFO:common:created directory at: artifacts]
+[2024-08-25 14:50:42,847:INFO:common:created directory at: artifacts\prepare_callbacks\checkpoint_dir]
+[2024-08-25 14:50:42,848:INFO:common:created directory at: artifacts\prepare_callbacks\tensorboard_log_dir]
+[2024-08-25 14:51:00,022:INFO:common:yaml file: config\config.yaml loaded successfully]
+[2024-08-25 14:51:00,025:INFO:common:yaml file: params.yaml loaded successfully]
+[2024-08-25 14:51:00,028:INFO:common:created directory at: artifacts]
+[2024-08-25 14:51:00,028:INFO:common:created directory at: artifacts\prepare_callbacks\checkpoint_dir]
+[2024-08-25 14:51:00,029:INFO:common:created directory at: artifacts\prepare_callbacks\tensorboard_log_dir]
+[2024-08-25 14:52:00,588:INFO:common:yaml file: config\config.yaml loaded successfully]
+[2024-08-25 14:52:00,592:INFO:common:yaml file: params.yaml loaded successfully]
+[2024-08-25 14:52:00,594:INFO:common:created directory at: artifacts]
+[2024-08-25 14:52:00,597:INFO:common:created directory at: artifacts\prepare_callbacks\checkpoint_dir]
+[2024-08-25 14:52:00,598:INFO:common:created directory at: artifacts\prepare_callbacks\tensorboard_log_dir]
+[2024-08-25 14:52:00,599:INFO:common:created directory at: artifacts\training]
+[2024-08-25 14:52:01,480:WARNING:saving_utils:Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-08-25 14:54:32,762:INFO:common:yaml file: config\config.yaml loaded successfully]
+[2024-08-25 14:54:32,764:INFO:common:yaml file: params.yaml loaded successfully]
+[2024-08-25 14:54:32,765:INFO:common:created directory at: artifacts]
+[2024-08-25 14:54:32,766:INFO:common:created directory at: artifacts\prepare_callbacks\checkpoint_dir]
+[2024-08-25 14:54:32,767:INFO:common:created directory at: artifacts\prepare_callbacks\tensorboard_log_dir]
+[2024-08-25 14:54:53,861:INFO:common:yaml file: config\config.yaml loaded successfully]
+[2024-08-25 14:54:53,864:INFO:common:yaml file: params.yaml loaded successfully]
+[2024-08-25 14:54:53,866:INFO:common:created directory at: artifacts]
+[2024-08-25 14:54:53,867:INFO:common:created directory at: artifacts\prepare_callbacks\checkpoint_dir]
+[2024-08-25 14:54:53,868:INFO:common:created directory at: artifacts\prepare_callbacks\tensorboard_log_dir]
+[2024-08-25 14:54:53,869:INFO:common:created directory at: artifacts\training]
+[2024-08-25 14:54:54,102:WARNING:saving_utils:Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-08-25 14:59:06,814:INFO:common:yaml file: config\config.yaml loaded successfully]
+[2024-08-25 14:59:06,823:INFO:common:yaml file: params.yaml loaded successfully]
+[2024-08-25 14:59:06,825:INFO:common:created directory at: artifacts]
+[2024-08-25 14:59:06,828:INFO:common:created directory at: artifacts\prepare_callbacks\checkpoint_dir]
+[2024-08-25 14:59:06,830:INFO:common:created directory at: artifacts\prepare_callbacks\tensorboard_log_dir]
+[2024-08-25 14:59:06,839:INFO:common:created directory at: artifacts\training]
+[2024-08-25 14:59:07,329:WARNING:saving_utils:Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-08-25 14:59:07,710:WARNING:module_wrapper:From c:\Users\nilarghya\AppData\Local\Programs\Python\Python310\lib\site-packages\keras\src\backend\common\global_state.py:82: The name tf.reset_default_graph is deprecated. Please use tf.compat.v1.reset_default_graph instead.
+]
+[2024-08-25 14:59:50,977:WARNING:saving_api:You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2024-08-25 23:17:19,536:INFO:utils:Note: NumExpr detected 12 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.]
+[2024-08-25 23:17:19,538:INFO:utils:NumExpr defaulting to 8 threads.]
+[2024-08-25 23:17:20,073:INFO:main:>>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-08-25 23:17:20,075:INFO:common:yaml file: config\config.yaml loaded successfully]
+[2024-08-25 23:17:20,076:INFO:common:yaml file: params.yaml loaded successfully]
+[2024-08-25 23:17:20,077:INFO:common:created directory at: artifacts]
+[2024-08-25 23:17:20,078:INFO:common:created directory at: artifacts/data_ingestion]
+[2024-08-25 23:17:36,992:INFO:data_ingestion:artifacts/data_ingestion/data.zip download: with following info: 
+ Connection: close
+Content-Length: 11616915
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "adf745abc03891fe493c3be264ec012691fe3fa21d861f35a27edbe6d86a76b1"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: 6B66:BC0FD:2165A2:2BD32D:66CB6E29
+Accept-Ranges: bytes
+Date: Sun, 25 Aug 2024 17:47:22 GMT
+Via: 1.1 varnish
+X-Served-By: cache-maa10223-MAA
+X-Cache: MISS
+X-Cache-Hits: 0
+X-Timer: S1724608041.299424,VS0,VE1022
+Vary: Authorization,Accept-Encoding,Origin
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: 8c12dd0884e5f7f2d8bb521d407b683ea8c50a77
+Expires: Sun, 25 Aug 2024 17:52:22 GMT
+Source-Age: 1
+
+]
+[2024-08-25 23:17:37,326:INFO:main:>>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-08-25 23:17:37,326:INFO:main:*******************]
+[2024-08-25 23:17:37,326:INFO:main:>>>>>> stage Prepare base model started <<<<<<]
+[2024-08-25 23:17:37,329:INFO:common:yaml file: config\config.yaml loaded successfully]
+[2024-08-25 23:17:37,330:INFO:common:yaml file: params.yaml loaded successfully]
+[2024-08-25 23:17:37,330:INFO:common:created directory at: artifacts]
+[2024-08-25 23:17:37,331:INFO:common:created directory at: artifacts/prepare_base_model]
+[2024-08-25 23:17:37,804:WARNING:saving_api:You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2024-08-25 23:17:38,081:WARNING:saving_api:You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2024-08-25 23:17:38,610:INFO:main:>>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2024-08-25 23:17:38,610:INFO:main:*******************]
+[2024-08-25 23:17:38,611:INFO:main:>>>>>> stage Training started <<<<<<]
+[2024-08-25 23:17:38,613:INFO:common:yaml file: config\config.yaml loaded successfully]
+[2024-08-25 23:17:38,614:INFO:common:yaml file: params.yaml loaded successfully]
+[2024-08-25 23:17:38,614:INFO:common:created directory at: artifacts]
+[2024-08-25 23:17:38,615:INFO:common:created directory at: artifacts\prepare_callbacks\checkpoint_dir]
+[2024-08-25 23:17:38,615:INFO:common:created directory at: artifacts\prepare_callbacks\tensorboard_log_dir]
+[2024-08-25 23:17:38,616:INFO:common:created directory at: artifacts\training]
+[2024-08-25 23:17:38,811:WARNING:saving_utils:Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-08-25 23:17:40,508:ERROR:main:Unknown variable: <KerasVariable shape=(25088, 2), dtype=float32, path=dense/kernel>. This optimizer can only be called for the variables it was originally built with. When working with a new set of variables, you should recreate a new optimizer instance.]
+Traceback (most recent call last):
+  File "c:\Users\nilarghya\Desktop\Bird-Flu-classification\main.py", line 37, in <module>
+    model_trainer.main()
+  File "C:\Users\nilarghya\anaconda3\Lib\site-packages\cnnClassifier\pipeline\stage_03_training.py", line 26, in main
+    training.train(
+  File "C:\Users\nilarghya\anaconda3\Lib\site-packages\cnnClassifier\components\training.py", line 68, in train
+    self.model.fit(
+  File "C:\Users\nilarghya\anaconda3\Lib\site-packages\keras\src\utils\traceback_utils.py", line 122, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "C:\Users\nilarghya\anaconda3\Lib\site-packages\keras\src\optimizers\base_optimizer.py", line 237, in _check_variables_are_known
+    raise ValueError(
+ValueError: Unknown variable: <KerasVariable shape=(25088, 2), dtype=float32, path=dense/kernel>. This optimizer can only be called for the variables it was originally built with. When working with a new set of variables, you should recreate a new optimizer instance.
+[2024-08-25 23:19:49,643:INFO:common:yaml file: config\config.yaml loaded successfully]
+[2024-08-25 23:19:49,649:INFO:common:yaml file: params.yaml loaded successfully]
+[2024-08-25 23:19:49,650:INFO:common:created directory at: artifacts]
+[2024-08-25 23:19:49,651:INFO:common:created directory at: artifacts\prepare_callbacks\checkpoint_dir]
+[2024-08-25 23:19:49,652:INFO:common:created directory at: artifacts\prepare_callbacks\tensorboard_log_dir]
+[2024-08-25 23:19:49,654:INFO:common:created directory at: artifacts\training]
+[2024-08-25 23:19:50,054:WARNING:saving_utils:Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-08-25 23:19:50,176:WARNING:module_wrapper:From c:\Users\nilarghya\AppData\Local\Programs\Python\Python310\lib\site-packages\keras\src\backend\common\global_state.py:82: The name tf.reset_default_graph is deprecated. Please use tf.compat.v1.reset_default_graph instead.
+]
+[2024-08-25 23:20:31,392:WARNING:saving_api:You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2024-08-25 23:22:43,764:INFO:utils:Note: NumExpr detected 12 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.]
+[2024-08-25 23:22:43,765:INFO:utils:NumExpr defaulting to 8 threads.]
+[2024-08-25 23:22:44,309:INFO:main:>>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-08-25 23:22:44,313:INFO:common:yaml file: config\config.yaml loaded successfully]
+[2024-08-25 23:22:44,314:INFO:common:yaml file: params.yaml loaded successfully]
+[2024-08-25 23:22:44,315:INFO:common:created directory at: artifacts]
+[2024-08-25 23:22:44,316:INFO:common:created directory at: artifacts/data_ingestion]
+[2024-08-25 23:23:10,924:INFO:data_ingestion:artifacts/data_ingestion/data.zip download: with following info: 
+ Connection: close
+Content-Length: 11616915
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "adf745abc03891fe493c3be264ec012691fe3fa21d861f35a27edbe6d86a76b1"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: 6B66:BC0FD:2165A2:2BD32D:66CB6E29
+Accept-Ranges: bytes
+Date: Sun, 25 Aug 2024 17:52:45 GMT
+Via: 1.1 varnish
+X-Served-By: cache-maa10229-MAA
+X-Cache: HIT
+X-Cache-Hits: 0
+X-Timer: S1724608366.515402,VS0,VE268
+Vary: Authorization,Accept-Encoding,Origin
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: 38060586406670ef09b6394ee575d8686ace4fde
+Expires: Sun, 25 Aug 2024 17:57:45 GMT
+Source-Age: 0
+
+]
+[2024-08-25 23:23:11,483:INFO:main:>>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-08-25 23:23:11,485:INFO:main:*******************]
+[2024-08-25 23:23:11,486:INFO:main:>>>>>> stage Prepare base model started <<<<<<]
+[2024-08-25 23:23:11,488:INFO:common:yaml file: config\config.yaml loaded successfully]
+[2024-08-25 23:23:11,490:INFO:common:yaml file: params.yaml loaded successfully]
+[2024-08-25 23:23:11,491:INFO:common:created directory at: artifacts]
+[2024-08-25 23:23:11,493:INFO:common:created directory at: artifacts/prepare_base_model]
+[2024-08-25 23:23:12,251:WARNING:saving_api:You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2024-08-25 23:23:12,691:WARNING:saving_api:You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2024-08-25 23:23:12,838:INFO:main:>>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2024-08-25 23:23:12,839:INFO:main:*******************]
+[2024-08-25 23:23:12,840:INFO:main:>>>>>> stage Training started <<<<<<]
+[2024-08-25 23:23:12,842:INFO:common:yaml file: config\config.yaml loaded successfully]
+[2024-08-25 23:23:12,844:INFO:common:yaml file: params.yaml loaded successfully]
+[2024-08-25 23:23:12,845:INFO:common:created directory at: artifacts]
+[2024-08-25 23:23:12,848:INFO:common:created directory at: artifacts\prepare_callbacks\checkpoint_dir]
+[2024-08-25 23:23:12,850:INFO:common:created directory at: artifacts\prepare_callbacks\tensorboard_log_dir]
+[2024-08-25 23:23:12,851:INFO:common:created directory at: artifacts\training]
+[2024-08-25 23:23:13,109:WARNING:saving_utils:Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-08-25 23:23:15,074:ERROR:main:Unknown variable: <KerasVariable shape=(25088, 2), dtype=float32, path=dense/kernel>. This optimizer can only be called for the variables it was originally built with. When working with a new set of variables, you should recreate a new optimizer instance.]
+Traceback (most recent call last):
+  File "c:\Users\nilarghya\Desktop\Bird-Flu-classification\main.py", line 37, in <module>
+    model_trainer.main()
+  File "C:\Users\nilarghya\anaconda3\Lib\site-packages\cnnClassifier\pipeline\stage_03_training.py", line 26, in main
+    training.train(
+  File "C:\Users\nilarghya\anaconda3\Lib\site-packages\cnnClassifier\components\training.py", line 68, in train
+    self.model.fit(
+  File "C:\Users\nilarghya\anaconda3\Lib\site-packages\keras\src\utils\traceback_utils.py", line 122, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "C:\Users\nilarghya\anaconda3\Lib\site-packages\keras\src\optimizers\base_optimizer.py", line 237, in _check_variables_are_known
+    raise ValueError(
+ValueError: Unknown variable: <KerasVariable shape=(25088, 2), dtype=float32, path=dense/kernel>. This optimizer can only be called for the variables it was originally built with. When working with a new set of variables, you should recreate a new optimizer instance.
+[2024-08-25 23:35:53,903:INFO:utils:Note: NumExpr detected 12 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.]
+[2024-08-25 23:35:53,904:INFO:utils:NumExpr defaulting to 8 threads.]
+[2024-08-25 23:35:54,359:INFO:main:>>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-08-25 23:35:54,363:INFO:common:yaml file: config\config.yaml loaded successfully]
+[2024-08-25 23:35:54,364:INFO:common:yaml file: params.yaml loaded successfully]
+[2024-08-25 23:35:54,364:INFO:common:created directory at: artifacts]
+[2024-08-25 23:35:54,365:INFO:common:created directory at: artifacts/data_ingestion]
+[2024-08-25 23:36:45,975:INFO:data_ingestion:artifacts/data_ingestion/data.zip download: with following info: 
+ Connection: close
+Content-Length: 11616915
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "adf745abc03891fe493c3be264ec012691fe3fa21d861f35a27edbe6d86a76b1"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: 6B66:BC0FD:2165A2:2BD32D:66CB6E29
+Accept-Ranges: bytes
+Date: Sun, 25 Aug 2024 18:05:56 GMT
+Via: 1.1 varnish
+X-Served-By: cache-maa10240-MAA
+X-Cache: HIT
+X-Cache-Hits: 0
+X-Timer: S1724609156.310407,VS0,VE259
+Vary: Authorization,Accept-Encoding,Origin
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: fb62df778b7a48f6dd987615889e49ea44fe31c2
+Expires: Sun, 25 Aug 2024 18:10:56 GMT
+Source-Age: 0
+
+]
+[2024-08-25 23:36:46,360:INFO:main:>>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-08-25 23:36:46,361:INFO:main:*******************]
+[2024-08-25 23:36:46,361:INFO:main:>>>>>> stage Prepare base model started <<<<<<]
+[2024-08-25 23:36:46,363:INFO:common:yaml file: config\config.yaml loaded successfully]
+[2024-08-25 23:36:46,364:INFO:common:yaml file: params.yaml loaded successfully]
+[2024-08-25 23:36:46,364:INFO:common:created directory at: artifacts]
+[2024-08-25 23:36:46,365:INFO:common:created directory at: artifacts/prepare_base_model]
+[2024-08-25 23:36:46,794:WARNING:saving_api:You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2024-08-25 23:36:47,079:WARNING:saving_api:You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2024-08-25 23:36:47,199:INFO:main:>>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2024-08-25 23:36:47,200:INFO:main:*******************]
+[2024-08-25 23:36:47,200:INFO:main:>>>>>> stage Training started <<<<<<]
+[2024-08-25 23:36:47,202:INFO:common:yaml file: config\config.yaml loaded successfully]
+[2024-08-25 23:36:47,203:INFO:common:yaml file: params.yaml loaded successfully]
+[2024-08-25 23:36:47,204:INFO:common:created directory at: artifacts]
+[2024-08-25 23:36:47,205:INFO:common:created directory at: artifacts\prepare_callbacks\checkpoint_dir]
+[2024-08-25 23:36:47,206:INFO:common:created directory at: artifacts\prepare_callbacks\tensorboard_log_dir]
+[2024-08-25 23:36:47,206:INFO:common:created directory at: artifacts\training]
+[2024-08-25 23:36:47,366:WARNING:saving_utils:Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-08-25 23:36:49,009:ERROR:main:Unknown variable: <KerasVariable shape=(25088, 2), dtype=float32, path=dense/kernel>. This optimizer can only be called for the variables it was originally built with. When working with a new set of variables, you should recreate a new optimizer instance.]
+Traceback (most recent call last):
+  File "c:\Users\nilarghya\Desktop\Bird-Flu-classification\main.py", line 37, in <module>
+    model_trainer.main()
+  File "C:\Users\nilarghya\anaconda3\Lib\site-packages\cnnClassifier\pipeline\stage_03_training.py", line 26, in main
+    training.train(
+  File "C:\Users\nilarghya\anaconda3\Lib\site-packages\cnnClassifier\components\training.py", line 68, in train
+    self.model.fit(
+  File "C:\Users\nilarghya\anaconda3\Lib\site-packages\keras\src\utils\traceback_utils.py", line 122, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "C:\Users\nilarghya\anaconda3\Lib\site-packages\keras\src\optimizers\base_optimizer.py", line 237, in _check_variables_are_known
+    raise ValueError(
+ValueError: Unknown variable: <KerasVariable shape=(25088, 2), dtype=float32, path=dense/kernel>. This optimizer can only be called for the variables it was originally built with. When working with a new set of variables, you should recreate a new optimizer instance.
+[2024-08-25 23:41:29,976:INFO:main:>>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-08-25 23:41:29,979:INFO:common:yaml file: config\config.yaml loaded successfully]
+[2024-08-25 23:41:29,980:INFO:common:yaml file: params.yaml loaded successfully]
+[2024-08-25 23:41:29,981:INFO:common:created directory at: artifacts]
+[2024-08-25 23:41:29,981:INFO:common:created directory at: artifacts/data_ingestion]
+[2024-08-25 23:41:29,982:INFO:data_ingestion:File already exists of size: ~ 11345 KB]
+[2024-08-25 23:41:30,324:INFO:main:>>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-08-25 23:41:30,325:INFO:main:*******************]
+[2024-08-25 23:41:30,325:INFO:main:>>>>>> stage Prepare base model started <<<<<<]
+[2024-08-25 23:41:30,328:INFO:common:yaml file: config\config.yaml loaded successfully]
+[2024-08-25 23:41:30,329:INFO:common:yaml file: params.yaml loaded successfully]
+[2024-08-25 23:41:30,330:INFO:common:created directory at: artifacts]
+[2024-08-25 23:41:30,330:INFO:common:created directory at: artifacts/prepare_base_model]
+[2024-08-25 23:41:31,094:WARNING:saving_api:You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2024-08-25 23:41:31,307:WARNING:saving_api:You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2024-08-25 23:41:31,473:INFO:main:>>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2024-08-25 23:42:05,088:INFO:main:>>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-08-25 23:42:05,090:INFO:common:yaml file: config\config.yaml loaded successfully]
+[2024-08-25 23:42:05,091:INFO:common:yaml file: params.yaml loaded successfully]
+[2024-08-25 23:42:05,091:INFO:common:created directory at: artifacts]
+[2024-08-25 23:42:05,092:INFO:common:created directory at: artifacts/data_ingestion]
+[2024-08-25 23:42:05,092:INFO:data_ingestion:File already exists of size: ~ 11345 KB]
+[2024-08-25 23:42:05,375:INFO:main:>>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-08-25 23:42:05,375:INFO:main:*******************]
+[2024-08-25 23:42:05,375:INFO:main:>>>>>> stage Prepare base model started <<<<<<]
+[2024-08-25 23:42:05,377:INFO:common:yaml file: config\config.yaml loaded successfully]
+[2024-08-25 23:42:05,378:INFO:common:yaml file: params.yaml loaded successfully]
+[2024-08-25 23:42:05,378:INFO:common:created directory at: artifacts]
+[2024-08-25 23:42:05,378:INFO:common:created directory at: artifacts/prepare_base_model]
+[2024-08-25 23:42:05,888:WARNING:saving_api:You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2024-08-25 23:42:06,080:WARNING:saving_api:You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2024-08-25 23:42:06,204:INFO:main:>>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2024-08-25 23:46:51,417:INFO:main:>>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-08-25 23:46:51,420:INFO:common:yaml file: config\config.yaml loaded successfully]
+[2024-08-25 23:46:51,421:INFO:common:yaml file: params.yaml loaded successfully]
+[2024-08-25 23:46:51,422:INFO:common:created directory at: artifacts]
+[2024-08-25 23:46:51,422:INFO:common:created directory at: artifacts/data_ingestion]
+[2024-08-25 23:46:51,422:INFO:data_ingestion:File already exists of size: ~ 11345 KB]
+[2024-08-25 23:46:51,738:INFO:main:>>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-08-25 23:46:51,738:INFO:main:*******************]
+[2024-08-25 23:46:51,739:INFO:main:>>>>>> stage Prepare base model started <<<<<<]
+[2024-08-25 23:46:51,740:INFO:common:yaml file: config\config.yaml loaded successfully]
+[2024-08-25 23:46:51,741:INFO:common:yaml file: params.yaml loaded successfully]
+[2024-08-25 23:46:51,741:INFO:common:created directory at: artifacts]
+[2024-08-25 23:46:51,742:INFO:common:created directory at: artifacts/prepare_base_model]
+[2024-08-25 23:46:52,307:WARNING:saving_api:You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2024-08-25 23:46:52,454:WARNING:saving_api:You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2024-08-25 23:46:52,577:INFO:main:>>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2024-08-25 23:46:52,577:INFO:main:*******************]
+[2024-08-25 23:46:52,578:INFO:main:>>>>>> stage Training started <<<<<<]
+[2024-08-25 23:46:52,580:INFO:common:yaml file: config\config.yaml loaded successfully]
+[2024-08-25 23:46:52,581:INFO:common:yaml file: params.yaml loaded successfully]
+[2024-08-25 23:46:52,583:INFO:common:created directory at: artifacts]
+[2024-08-25 23:46:52,583:INFO:common:created directory at: artifacts\prepare_callbacks\checkpoint_dir]
+[2024-08-25 23:46:52,584:INFO:common:created directory at: artifacts\prepare_callbacks\tensorboard_log_dir]
+[2024-08-25 23:46:52,584:INFO:common:created directory at: artifacts\training]
+[2024-08-25 23:46:52,769:WARNING:saving_utils:Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-08-25 23:46:54,730:ERROR:main:Unknown variable: <KerasVariable shape=(25088, 2), dtype=float32, path=dense/kernel>. This optimizer can only be called for the variables it was originally built with. When working with a new set of variables, you should recreate a new optimizer instance.]
+Traceback (most recent call last):
+  File "c:\Users\nilarghya\Desktop\Bird-Flu-classification\main.py", line 39, in <module>
+    obj.main()
+  File "C:\Users\nilarghya\anaconda3\Lib\site-packages\cnnClassifier\pipeline\stage_03_training.py", line 26, in main
+    training.train(
+  File "C:\Users\nilarghya\anaconda3\Lib\site-packages\cnnClassifier\components\training.py", line 68, in train
+    self.model.fit(
+  File "C:\Users\nilarghya\anaconda3\Lib\site-packages\keras\src\utils\traceback_utils.py", line 122, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "C:\Users\nilarghya\anaconda3\Lib\site-packages\keras\src\optimizers\base_optimizer.py", line 237, in _check_variables_are_known
+    raise ValueError(
+ValueError: Unknown variable: <KerasVariable shape=(25088, 2), dtype=float32, path=dense/kernel>. This optimizer can only be called for the variables it was originally built with. When working with a new set of variables, you should recreate a new optimizer instance.
+[2024-08-25 23:53:21,000:WARNING:module_wrapper:From C:\Users\nilarghya\anaconda3\Lib\site-packages\keras\src\backend\common\global_state.py:82: The name tf.reset_default_graph is deprecated. Please use tf.compat.v1.reset_default_graph instead.
+]
+[2024-08-25 23:53:21,101:INFO:main:>>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-08-25 23:53:21,104:INFO:common:yaml file: config\config.yaml loaded successfully]
+[2024-08-25 23:53:21,105:INFO:common:yaml file: params.yaml loaded successfully]
+[2024-08-25 23:53:21,105:INFO:common:created directory at: artifacts]
+[2024-08-25 23:53:21,106:INFO:common:created directory at: artifacts/data_ingestion]
+[2024-08-25 23:53:21,106:INFO:data_ingestion:File already exists of size: ~ 11345 KB]
+[2024-08-25 23:53:21,347:INFO:main:>>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-08-25 23:53:21,348:INFO:main:*******************]
+[2024-08-25 23:53:21,348:INFO:main:>>>>>> stage Prepare base model started <<<<<<]
+[2024-08-25 23:53:21,349:INFO:common:yaml file: config\config.yaml loaded successfully]
+[2024-08-25 23:53:21,351:INFO:common:yaml file: params.yaml loaded successfully]
+[2024-08-25 23:53:21,351:INFO:common:created directory at: artifacts]
+[2024-08-25 23:53:21,351:INFO:common:created directory at: artifacts/prepare_base_model]
+[2024-08-25 23:53:21,789:WARNING:saving_api:You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2024-08-25 23:53:21,980:WARNING:saving_api:You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2024-08-25 23:53:22,116:INFO:main:>>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2024-08-25 23:53:22,117:INFO:main:*******************]
+[2024-08-25 23:53:22,118:INFO:main:>>>>>> stage Training started <<<<<<]
+[2024-08-25 23:53:22,247:INFO:common:yaml file: config\config.yaml loaded successfully]
+[2024-08-25 23:53:22,249:INFO:common:yaml file: params.yaml loaded successfully]
+[2024-08-25 23:53:22,249:INFO:common:created directory at: artifacts]
+[2024-08-25 23:53:22,250:INFO:common:created directory at: artifacts\prepare_callbacks\checkpoint_dir]
+[2024-08-25 23:53:22,251:INFO:common:created directory at: artifacts\prepare_callbacks\tensorboard_log_dir]
+[2024-08-25 23:53:22,251:INFO:common:created directory at: artifacts\training]
+[2024-08-25 23:53:22,478:WARNING:saving_utils:Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-08-25 23:53:23,815:ERROR:main:Exception occurred during Training]
+Traceback (most recent call last):
+  File "c:\Users\nilarghya\Desktop\Bird-Flu-classification\main.py", line 44, in <module>
+    obj.main()
+  File "C:\Users\nilarghya\anaconda3\Lib\site-packages\cnnClassifier\pipeline\stage_03_training.py", line 26, in main
+    training.train(
+  File "C:\Users\nilarghya\anaconda3\Lib\site-packages\cnnClassifier\components\training.py", line 68, in train
+    self.model.fit(
+  File "C:\Users\nilarghya\anaconda3\Lib\site-packages\keras\src\utils\traceback_utils.py", line 122, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "C:\Users\nilarghya\anaconda3\Lib\site-packages\keras\src\optimizers\base_optimizer.py", line 237, in _check_variables_are_known
+    raise ValueError(
+ValueError: Unknown variable: <KerasVariable shape=(25088, 2), dtype=float32, path=dense/kernel>. This optimizer can only be called for the variables it was originally built with. When working with a new set of variables, you should recreate a new optimizer instance.
+[2024-08-25 23:53:58,170:WARNING:module_wrapper:From C:\Users\nilarghya\anaconda3\Lib\site-packages\keras\src\backend\common\global_state.py:82: The name tf.reset_default_graph is deprecated. Please use tf.compat.v1.reset_default_graph instead.
+]
+[2024-08-25 23:53:58,304:INFO:main:>>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-08-25 23:53:58,306:INFO:common:yaml file: config\config.yaml loaded successfully]
+[2024-08-25 23:53:58,308:INFO:common:yaml file: params.yaml loaded successfully]
+[2024-08-25 23:53:58,308:INFO:common:created directory at: artifacts]
+[2024-08-25 23:53:58,308:INFO:common:created directory at: artifacts/data_ingestion]
+[2024-08-25 23:53:58,309:INFO:data_ingestion:File already exists of size: ~ 11345 KB]
+[2024-08-25 23:53:58,605:INFO:main:>>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-08-25 23:53:58,605:INFO:main:*******************]
+[2024-08-25 23:53:58,606:INFO:main:>>>>>> stage Prepare base model started <<<<<<]
+[2024-08-25 23:53:58,608:INFO:common:yaml file: config\config.yaml loaded successfully]
+[2024-08-25 23:53:58,610:INFO:common:yaml file: params.yaml loaded successfully]
+[2024-08-25 23:53:58,610:INFO:common:created directory at: artifacts]
+[2024-08-25 23:53:58,610:INFO:common:created directory at: artifacts/prepare_base_model]
+[2024-08-25 23:53:59,159:WARNING:saving_api:You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2024-08-25 23:53:59,348:WARNING:saving_api:You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2024-08-25 23:53:59,478:INFO:main:>>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2024-08-25 23:53:59,478:INFO:main:*******************]
+[2024-08-25 23:53:59,478:INFO:main:>>>>>> stage Training started <<<<<<]
+[2024-08-25 23:53:59,638:INFO:common:yaml file: config\config.yaml loaded successfully]
+[2024-08-25 23:53:59,639:INFO:common:yaml file: params.yaml loaded successfully]
+[2024-08-25 23:53:59,640:INFO:common:created directory at: artifacts]
+[2024-08-25 23:53:59,640:INFO:common:created directory at: artifacts\prepare_callbacks\checkpoint_dir]
+[2024-08-25 23:53:59,640:INFO:common:created directory at: artifacts\prepare_callbacks\tensorboard_log_dir]
+[2024-08-25 23:53:59,641:INFO:common:created directory at: artifacts\training]
+[2024-08-25 23:53:59,842:WARNING:saving_utils:Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-08-25 23:54:00,664:ERROR:main:Exception occurred during Training]
+Traceback (most recent call last):
+  File "c:\Users\nilarghya\Desktop\Bird-Flu-classification\main.py", line 44, in <module>
+    obj.main()
+  File "C:\Users\nilarghya\anaconda3\Lib\site-packages\cnnClassifier\pipeline\stage_03_training.py", line 26, in main
+    training.train(
+  File "C:\Users\nilarghya\anaconda3\Lib\site-packages\cnnClassifier\components\training.py", line 68, in train
+    self.model.fit(
+  File "C:\Users\nilarghya\anaconda3\Lib\site-packages\keras\src\utils\traceback_utils.py", line 122, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "C:\Users\nilarghya\anaconda3\Lib\site-packages\keras\src\optimizers\base_optimizer.py", line 237, in _check_variables_are_known
+    raise ValueError(
+ValueError: Unknown variable: <KerasVariable shape=(25088, 2), dtype=float32, path=dense/kernel>. This optimizer can only be called for the variables it was originally built with. When working with a new set of variables, you should recreate a new optimizer instance.
+[2024-08-25 23:55:32,546:WARNING:module_wrapper:From C:\Users\nilarghya\anaconda3\Lib\site-packages\keras\src\backend\common\global_state.py:82: The name tf.reset_default_graph is deprecated. Please use tf.compat.v1.reset_default_graph instead.
+]
+[2024-08-25 23:55:32,677:INFO:main:>>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-08-25 23:55:32,680:INFO:common:yaml file: config\config.yaml loaded successfully]
+[2024-08-25 23:55:32,681:INFO:common:yaml file: params.yaml loaded successfully]
+[2024-08-25 23:55:32,682:INFO:common:created directory at: artifacts]
+[2024-08-25 23:55:32,683:INFO:common:created directory at: artifacts/data_ingestion]
+[2024-08-25 23:55:45,453:INFO:data_ingestion:artifacts/data_ingestion/data.zip download: with following info: 
+ Connection: close
+Content-Length: 11616915
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "adf745abc03891fe493c3be264ec012691fe3fa21d861f35a27edbe6d86a76b1"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: 6B66:BC0FD:2165A2:2BD32D:66CB6E29
+Accept-Ranges: bytes
+Date: Sun, 25 Aug 2024 18:25:35 GMT
+Via: 1.1 varnish
+X-Served-By: cache-maa10224-MAA
+X-Cache: HIT
+X-Cache-Hits: 0
+X-Timer: S1724610335.013211,VS0,VE264
+Vary: Authorization,Accept-Encoding,Origin
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: cf22d789ce0a2eb5740bdcbfefd3e5ae9065d4a1
+Expires: Sun, 25 Aug 2024 18:30:35 GMT
+Source-Age: 0
+
+]
+[2024-08-25 23:55:45,811:INFO:main:>>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-08-25 23:55:45,811:INFO:main:*******************]
+[2024-08-25 23:55:45,811:INFO:main:>>>>>> stage Prepare base model started <<<<<<]
+[2024-08-25 23:55:45,813:INFO:common:yaml file: config\config.yaml loaded successfully]
+[2024-08-25 23:55:45,814:INFO:common:yaml file: params.yaml loaded successfully]
+[2024-08-25 23:55:45,815:INFO:common:created directory at: artifacts]
+[2024-08-25 23:55:45,815:INFO:common:created directory at: artifacts/prepare_base_model]
+[2024-08-25 23:55:46,279:WARNING:saving_api:You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2024-08-25 23:55:46,425:WARNING:saving_api:You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2024-08-25 23:55:46,543:INFO:main:>>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2024-08-25 23:55:46,544:INFO:main:*******************]
+[2024-08-25 23:55:46,544:INFO:main:>>>>>> stage Training started <<<<<<]
+[2024-08-25 23:55:46,673:INFO:common:yaml file: config\config.yaml loaded successfully]
+[2024-08-25 23:55:46,674:INFO:common:yaml file: params.yaml loaded successfully]
+[2024-08-25 23:55:46,675:INFO:common:created directory at: artifacts]
+[2024-08-25 23:55:46,676:INFO:common:created directory at: artifacts\prepare_callbacks\checkpoint_dir]
+[2024-08-25 23:55:46,676:INFO:common:created directory at: artifacts\prepare_callbacks\tensorboard_log_dir]
+[2024-08-25 23:55:46,676:INFO:common:created directory at: artifacts\training]
+[2024-08-25 23:55:46,871:WARNING:saving_utils:Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-08-25 23:55:47,670:ERROR:main:Exception occurred during Training]
+Traceback (most recent call last):
+  File "c:\Users\nilarghya\Desktop\Bird-Flu-classification\main.py", line 44, in <module>
+    obj.main()
+  File "C:\Users\nilarghya\anaconda3\Lib\site-packages\cnnClassifier\pipeline\stage_03_training.py", line 26, in main
+    training.train(
+  File "C:\Users\nilarghya\anaconda3\Lib\site-packages\cnnClassifier\components\training.py", line 68, in train
+    self.model.fit(
+  File "C:\Users\nilarghya\anaconda3\Lib\site-packages\keras\src\utils\traceback_utils.py", line 122, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "C:\Users\nilarghya\anaconda3\Lib\site-packages\keras\src\optimizers\base_optimizer.py", line 237, in _check_variables_are_known
+    raise ValueError(
+ValueError: Unknown variable: <KerasVariable shape=(25088, 2), dtype=float32, path=dense/kernel>. This optimizer can only be called for the variables it was originally built with. When working with a new set of variables, you should recreate a new optimizer instance.
+[2024-08-25 23:58:35,781:WARNING:module_wrapper:From C:\Users\nilarghya\anaconda3\Lib\site-packages\keras\src\backend\common\global_state.py:82: The name tf.reset_default_graph is deprecated. Please use tf.compat.v1.reset_default_graph instead.
+]
+[2024-08-25 23:58:35,909:INFO:main:>>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-08-25 23:58:35,911:INFO:common:yaml file: config\config.yaml loaded successfully]
+[2024-08-25 23:58:35,912:INFO:common:yaml file: params.yaml loaded successfully]
+[2024-08-25 23:58:35,914:INFO:common:created directory at: artifacts]
+[2024-08-25 23:58:35,914:INFO:common:created directory at: artifacts/data_ingestion]
+[2024-08-25 23:58:51,612:INFO:data_ingestion:artifacts/data_ingestion/data.zip download: with following info: 
+ Connection: close
+Content-Length: 11616915
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "adf745abc03891fe493c3be264ec012691fe3fa21d861f35a27edbe6d86a76b1"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: 6B66:BC0FD:2165A2:2BD32D:66CB6E29
+Accept-Ranges: bytes
+Date: Sun, 25 Aug 2024 18:28:36 GMT
+Via: 1.1 varnish
+X-Served-By: cache-maa10238-MAA
+X-Cache: HIT
+X-Cache-Hits: 0
+X-Timer: S1724610517.959090,VS0,VE1
+Vary: Authorization,Accept-Encoding,Origin
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: 462adb5f50b07efa3b20023787d9cbf02e87834b
+Expires: Sun, 25 Aug 2024 18:33:36 GMT
+Source-Age: 182
+
+]
+[2024-08-25 23:58:51,949:INFO:main:>>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-08-25 23:58:51,950:INFO:main:*******************]
+[2024-08-25 23:58:51,950:INFO:main:>>>>>> stage Prepare base model started <<<<<<]
+[2024-08-25 23:58:51,951:INFO:common:yaml file: config\config.yaml loaded successfully]
+[2024-08-25 23:58:51,953:INFO:common:yaml file: params.yaml loaded successfully]
+[2024-08-25 23:58:51,953:INFO:common:created directory at: artifacts]
+[2024-08-25 23:58:51,953:INFO:common:created directory at: artifacts/prepare_base_model]
+[2024-08-25 23:58:52,359:WARNING:saving_api:You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2024-08-25 23:58:52,492:WARNING:saving_api:You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2024-08-25 23:58:52,612:INFO:main:>>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2024-08-25 23:58:52,613:INFO:main:*******************]
+[2024-08-25 23:58:52,613:INFO:main:>>>>>> stage Training started <<<<<<]
+[2024-08-25 23:58:52,735:INFO:common:yaml file: config\config.yaml loaded successfully]
+[2024-08-25 23:58:52,736:INFO:common:yaml file: params.yaml loaded successfully]
+[2024-08-25 23:58:52,737:INFO:common:created directory at: artifacts]
+[2024-08-25 23:58:52,738:INFO:common:created directory at: artifacts\prepare_callbacks\checkpoint_dir]
+[2024-08-25 23:58:52,738:INFO:common:created directory at: artifacts\prepare_callbacks\tensorboard_log_dir]
+[2024-08-25 23:58:52,739:INFO:common:created directory at: artifacts\training]
+[2024-08-25 23:58:52,939:WARNING:saving_utils:Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-08-25 23:58:53,781:ERROR:main:Exception occurred during Training]
+Traceback (most recent call last):
+  File "c:\Users\nilarghya\Desktop\Bird-Flu-classification\main.py", line 44, in <module>
+    obj.main()
+  File "C:\Users\nilarghya\anaconda3\Lib\site-packages\cnnClassifier\pipeline\stage_03_training.py", line 26, in main
+    training.train(
+  File "C:\Users\nilarghya\anaconda3\Lib\site-packages\cnnClassifier\components\training.py", line 68, in train
+    self.model.fit(
+  File "C:\Users\nilarghya\anaconda3\Lib\site-packages\keras\src\utils\traceback_utils.py", line 122, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "C:\Users\nilarghya\anaconda3\Lib\site-packages\keras\src\optimizers\base_optimizer.py", line 237, in _check_variables_are_known
+    raise ValueError(
+ValueError: Unknown variable: <KerasVariable shape=(25088, 2), dtype=float32, path=dense/kernel>. This optimizer can only be called for the variables it was originally built with. When working with a new set of variables, you should recreate a new optimizer instance.
+[2024-08-26 00:00:45,656:WARNING:module_wrapper:From C:\Users\nilarghya\anaconda3\Lib\site-packages\keras\src\backend\common\global_state.py:82: The name tf.reset_default_graph is deprecated. Please use tf.compat.v1.reset_default_graph instead.
+]
+[2024-08-26 00:00:45,773:INFO:main:>>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-08-26 00:00:45,776:INFO:common:yaml file: config\config.yaml loaded successfully]
+[2024-08-26 00:00:45,776:INFO:common:yaml file: params.yaml loaded successfully]
+[2024-08-26 00:00:45,777:INFO:common:created directory at: artifacts]
+[2024-08-26 00:00:45,778:INFO:common:created directory at: artifacts/data_ingestion]
+[2024-08-26 00:00:57,005:INFO:data_ingestion:artifacts/data_ingestion/data.zip download: with following info: 
+ Connection: close
+Content-Length: 11616915
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "adf745abc03891fe493c3be264ec012691fe3fa21d861f35a27edbe6d86a76b1"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: 6B66:BC0FD:2165A2:2BD32D:66CB6E29
+Accept-Ranges: bytes
+Date: Sun, 25 Aug 2024 18:30:46 GMT
+Via: 1.1 varnish
+X-Served-By: cache-maa10223-MAA
+X-Cache: HIT
+X-Cache-Hits: 0
+X-Timer: S1724610646.449202,VS0,VE254
+Vary: Authorization,Accept-Encoding,Origin
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: 40ca86f621a1ca37e9bb9fb2d9a781e061a4c9f0
+Expires: Sun, 25 Aug 2024 18:35:46 GMT
+Source-Age: 0
+
+]
+[2024-08-26 00:00:57,383:INFO:main:>>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-08-26 00:00:57,383:INFO:main:*******************]
+[2024-08-26 00:00:57,384:INFO:main:>>>>>> stage Prepare base model started <<<<<<]
+[2024-08-26 00:00:57,385:INFO:common:yaml file: config\config.yaml loaded successfully]
+[2024-08-26 00:00:57,386:INFO:common:yaml file: params.yaml loaded successfully]
+[2024-08-26 00:00:57,387:INFO:common:created directory at: artifacts]
+[2024-08-26 00:00:57,387:INFO:common:created directory at: artifacts/prepare_base_model]
+[2024-08-26 00:00:57,754:WARNING:saving_api:You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2024-08-26 00:00:57,887:WARNING:saving_api:You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2024-08-26 00:00:57,987:INFO:main:>>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2024-08-26 00:00:57,988:INFO:main:*******************]
+[2024-08-26 00:00:57,988:INFO:main:>>>>>> stage Training started <<<<<<]
+[2024-08-26 00:00:58,120:INFO:common:yaml file: config\config.yaml loaded successfully]
+[2024-08-26 00:00:58,121:INFO:common:yaml file: params.yaml loaded successfully]
+[2024-08-26 00:00:58,122:INFO:common:created directory at: artifacts]
+[2024-08-26 00:00:58,124:INFO:common:created directory at: artifacts\prepare_callbacks\checkpoint_dir]
+[2024-08-26 00:00:58,124:INFO:common:created directory at: artifacts\prepare_callbacks\tensorboard_log_dir]
+[2024-08-26 00:00:58,125:INFO:common:created directory at: artifacts\training]
+[2024-08-26 00:00:58,325:WARNING:saving_utils:Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-08-26 00:00:59,087:ERROR:main:Exception occurred during Training]
+Traceback (most recent call last):
+  File "c:\Users\nilarghya\Desktop\Bird-Flu-classification\main.py", line 44, in <module>
+    obj.main()
+  File "C:\Users\nilarghya\anaconda3\Lib\site-packages\cnnClassifier\pipeline\stage_03_training.py", line 26, in main
+    training.train(
+  File "C:\Users\nilarghya\anaconda3\Lib\site-packages\cnnClassifier\components\training.py", line 68, in train
+    self.model.fit(
+  File "C:\Users\nilarghya\anaconda3\Lib\site-packages\keras\src\utils\traceback_utils.py", line 122, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "C:\Users\nilarghya\anaconda3\Lib\site-packages\keras\src\optimizers\base_optimizer.py", line 237, in _check_variables_are_known
+    raise ValueError(
+ValueError: Unknown variable: <KerasVariable shape=(25088, 2), dtype=float32, path=dense/kernel>. This optimizer can only be called for the variables it was originally built with. When working with a new set of variables, you should recreate a new optimizer instance.
+[2024-08-26 00:03:37,915:INFO:common:yaml file: config\config.yaml loaded successfully]
+[2024-08-26 00:03:37,929:INFO:common:yaml file: params.yaml loaded successfully]
+[2024-08-26 00:03:37,934:INFO:common:created directory at: artifacts]
+[2024-08-26 00:03:37,941:INFO:common:created directory at: artifacts\prepare_callbacks\checkpoint_dir]
+[2024-08-26 00:03:37,943:INFO:common:created directory at: artifacts\prepare_callbacks\tensorboard_log_dir]
+[2024-08-26 00:03:38,082:INFO:common:created directory at: artifacts\training]
+[2024-08-26 00:03:38,851:WARNING:saving_utils:Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-08-26 00:03:39,606:WARNING:module_wrapper:From c:\Users\nilarghya\AppData\Local\Programs\Python\Python310\lib\site-packages\keras\src\backend\common\global_state.py:82: The name tf.reset_default_graph is deprecated. Please use tf.compat.v1.reset_default_graph instead.
+]
+[2024-08-26 00:04:17,835:WARNING:saving_api:You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2024-08-26 00:07:38,438:INFO:utils:Note: NumExpr detected 12 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.]
+[2024-08-26 00:07:38,438:INFO:utils:NumExpr defaulting to 8 threads.]
+[2024-08-26 00:07:38,833:INFO:main:>>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-08-26 00:07:38,835:INFO:common:yaml file: config\config.yaml loaded successfully]
+[2024-08-26 00:07:38,836:INFO:common:yaml file: params.yaml loaded successfully]
+[2024-08-26 00:07:38,837:INFO:common:created directory at: artifacts]
+[2024-08-26 00:07:38,837:INFO:common:created directory at: artifacts/data_ingestion]
+[2024-08-26 00:07:49,755:INFO:data_ingestion:artifacts/data_ingestion/data.zip download: with following info: 
+ Connection: close
+Content-Length: 11616915
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "adf745abc03891fe493c3be264ec012691fe3fa21d861f35a27edbe6d86a76b1"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: 6B66:BC0FD:2165A2:2BD32D:66CB6E29
+Accept-Ranges: bytes
+Date: Sun, 25 Aug 2024 18:37:39 GMT
+Via: 1.1 varnish
+X-Served-By: cache-maa10223-MAA
+X-Cache: HIT
+X-Cache-Hits: 0
+X-Timer: S1724611060.649419,VS0,VE297
+Vary: Authorization,Accept-Encoding,Origin
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: a19816ad3ec99f0b0ca2d79b000b8afbccaaf95c
+Expires: Sun, 25 Aug 2024 18:42:39 GMT
+Source-Age: 0
+
+]
+[2024-08-26 00:07:50,103:INFO:main:>>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-08-26 00:07:50,104:INFO:main:*******************]
+[2024-08-26 00:07:50,104:INFO:main:>>>>>> stage Prepare base model started <<<<<<]
+[2024-08-26 00:07:50,106:INFO:common:yaml file: config\config.yaml loaded successfully]
+[2024-08-26 00:07:50,107:INFO:common:yaml file: params.yaml loaded successfully]
+[2024-08-26 00:07:50,108:INFO:common:created directory at: artifacts]
+[2024-08-26 00:07:50,108:INFO:common:created directory at: artifacts/prepare_base_model]
+[2024-08-26 00:07:50,533:WARNING:saving_api:You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2024-08-26 00:07:50,796:WARNING:saving_api:You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2024-08-26 00:07:50,907:INFO:main:>>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2024-08-26 00:07:50,907:INFO:main:*******************]
+[2024-08-26 00:07:50,908:INFO:main:>>>>>> stage Training started <<<<<<]
+[2024-08-26 00:07:50,909:INFO:common:yaml file: config\config.yaml loaded successfully]
+[2024-08-26 00:07:50,910:INFO:common:yaml file: params.yaml loaded successfully]
+[2024-08-26 00:07:50,911:INFO:common:created directory at: artifacts]
+[2024-08-26 00:07:50,912:INFO:common:created directory at: artifacts\prepare_callbacks\checkpoint_dir]
+[2024-08-26 00:07:50,912:INFO:common:created directory at: artifacts\prepare_callbacks\tensorboard_log_dir]
+[2024-08-26 00:07:50,913:INFO:common:created directory at: artifacts\training]
+[2024-08-26 00:07:51,071:WARNING:saving_utils:Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-08-26 00:07:52,762:ERROR:main:Unknown variable: <KerasVariable shape=(25088, 2), dtype=float32, path=dense/kernel>. This optimizer can only be called for the variables it was originally built with. When working with a new set of variables, you should recreate a new optimizer instance.]
+Traceback (most recent call last):
+  File "c:\Users\nilarghya\Desktop\Bird-Flu-classification\main.py", line 40, in <module>
+    model_trainer.main()
+  File "C:\Users\nilarghya\anaconda3\Lib\site-packages\cnnClassifier\pipeline\stage_03_training.py", line 26, in main
+    training.train(
+  File "C:\Users\nilarghya\anaconda3\Lib\site-packages\cnnClassifier\components\training.py", line 68, in train
+    self.model.fit(
+  File "C:\Users\nilarghya\anaconda3\Lib\site-packages\keras\src\utils\traceback_utils.py", line 122, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "C:\Users\nilarghya\anaconda3\Lib\site-packages\keras\src\optimizers\base_optimizer.py", line 237, in _check_variables_are_known
+    raise ValueError(
+ValueError: Unknown variable: <KerasVariable shape=(25088, 2), dtype=float32, path=dense/kernel>. This optimizer can only be called for the variables it was originally built with. When working with a new set of variables, you should recreate a new optimizer instance.
+[2024-08-26 00:08:21,557:INFO:utils:Note: NumExpr detected 12 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.]
+[2024-08-26 00:08:21,557:INFO:utils:NumExpr defaulting to 8 threads.]
+[2024-08-26 00:08:21,941:INFO:main:>>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-08-26 00:08:21,943:INFO:common:yaml file: config\config.yaml loaded successfully]
+[2024-08-26 00:08:21,945:INFO:common:yaml file: params.yaml loaded successfully]
+[2024-08-26 00:08:21,945:INFO:common:created directory at: artifacts]
+[2024-08-26 00:08:21,946:INFO:common:created directory at: artifacts/data_ingestion]
+[2024-08-26 00:08:21,946:INFO:data_ingestion:File already exists of size: ~ 11345 KB]
+[2024-08-26 00:08:22,176:INFO:main:>>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-08-26 00:08:22,177:INFO:main:*******************]
+[2024-08-26 00:08:22,177:INFO:main:>>>>>> stage Prepare base model started <<<<<<]
+[2024-08-26 00:08:22,179:INFO:common:yaml file: config\config.yaml loaded successfully]
+[2024-08-26 00:08:22,180:INFO:common:yaml file: params.yaml loaded successfully]
+[2024-08-26 00:08:22,181:INFO:common:created directory at: artifacts]
+[2024-08-26 00:08:22,181:INFO:common:created directory at: artifacts/prepare_base_model]
+[2024-08-26 00:08:22,659:WARNING:saving_api:You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2024-08-26 00:08:22,930:WARNING:saving_api:You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2024-08-26 00:08:23,297:INFO:main:>>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2024-08-26 00:08:23,298:INFO:main:*******************]
+[2024-08-26 00:08:23,298:INFO:main:>>>>>> stage Training started <<<<<<]
+[2024-08-26 00:08:23,301:INFO:common:yaml file: config\config.yaml loaded successfully]
+[2024-08-26 00:08:23,302:INFO:common:yaml file: params.yaml loaded successfully]
+[2024-08-26 00:08:23,302:INFO:common:created directory at: artifacts]
+[2024-08-26 00:08:23,302:INFO:common:created directory at: artifacts\prepare_callbacks\checkpoint_dir]
+[2024-08-26 00:08:23,303:INFO:common:created directory at: artifacts\prepare_callbacks\tensorboard_log_dir]
+[2024-08-26 00:08:23,303:INFO:common:created directory at: artifacts\training]
+[2024-08-26 00:08:23,530:WARNING:saving_utils:Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-08-26 00:08:25,133:ERROR:main:Unknown variable: <KerasVariable shape=(25088, 2), dtype=float32, path=dense/kernel>. This optimizer can only be called for the variables it was originally built with. When working with a new set of variables, you should recreate a new optimizer instance.]
+Traceback (most recent call last):
+  File "c:\Users\nilarghya\Desktop\Bird-Flu-classification\main.py", line 40, in <module>
+    model_trainer.main()
+  File "C:\Users\nilarghya\anaconda3\Lib\site-packages\cnnClassifier\pipeline\stage_03_training.py", line 26, in main
+    training.train(
+  File "C:\Users\nilarghya\anaconda3\Lib\site-packages\cnnClassifier\components\training.py", line 68, in train
+    self.model.fit(
+  File "C:\Users\nilarghya\anaconda3\Lib\site-packages\keras\src\utils\traceback_utils.py", line 122, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "C:\Users\nilarghya\anaconda3\Lib\site-packages\keras\src\optimizers\base_optimizer.py", line 237, in _check_variables_are_known
+    raise ValueError(
+ValueError: Unknown variable: <KerasVariable shape=(25088, 2), dtype=float32, path=dense/kernel>. This optimizer can only be called for the variables it was originally built with. When working with a new set of variables, you should recreate a new optimizer instance.
