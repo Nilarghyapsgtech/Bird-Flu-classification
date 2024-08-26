@@ -952,3 +952,91 @@ Traceback (most recent call last):
   File "C:\Users\nilarghya\anaconda3\Lib\site-packages\keras\src\optimizers\base_optimizer.py", line 237, in _check_variables_are_known
     raise ValueError(
 ValueError: Unknown variable: <KerasVariable shape=(25088, 2), dtype=float32, path=dense/kernel>. This optimizer can only be called for the variables it was originally built with. When working with a new set of variables, you should recreate a new optimizer instance.
+[2024-08-26 16:26:19,422:INFO:utils:Note: NumExpr detected 12 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.]
+[2024-08-26 16:26:19,423:INFO:utils:NumExpr defaulting to 8 threads.]
+[2024-08-26 16:26:20,359:INFO:main:>>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-08-26 16:26:20,363:INFO:common:yaml file: config\config.yaml loaded successfully]
+[2024-08-26 16:26:20,366:INFO:common:yaml file: params.yaml loaded successfully]
+[2024-08-26 16:26:20,367:INFO:common:created directory at: artifacts]
+[2024-08-26 16:26:20,368:INFO:common:created directory at: artifacts/data_ingestion]
+[2024-08-26 16:26:20,369:INFO:data_ingestion:File already exists of size: ~ 11345 KB]
+[2024-08-26 16:26:21,040:INFO:main:>>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-08-26 16:26:21,040:INFO:main:*******************]
+[2024-08-26 16:26:21,040:INFO:main:>>>>>> stage Prepare base model started <<<<<<]
+[2024-08-26 16:26:21,043:INFO:common:yaml file: config\config.yaml loaded successfully]
+[2024-08-26 16:26:21,045:INFO:common:yaml file: params.yaml loaded successfully]
+[2024-08-26 16:26:21,046:INFO:common:created directory at: artifacts]
+[2024-08-26 16:26:21,047:INFO:common:created directory at: artifacts/prepare_base_model]
+[2024-08-26 16:26:21,809:WARNING:saving_api:You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2024-08-26 16:26:22,775:WARNING:saving_api:You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2024-08-26 16:26:22,913:INFO:main:>>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2024-08-26 16:26:22,914:INFO:main:*******************]
+[2024-08-26 16:26:22,915:INFO:main:>>>>>> stage Training started <<<<<<]
+[2024-08-26 16:26:22,918:INFO:common:yaml file: config\config.yaml loaded successfully]
+[2024-08-26 16:26:22,920:INFO:common:yaml file: params.yaml loaded successfully]
+[2024-08-26 16:26:22,921:INFO:common:created directory at: artifacts]
+[2024-08-26 16:26:22,922:INFO:common:created directory at: artifacts\prepare_callbacks\checkpoint_dir]
+[2024-08-26 16:26:22,923:INFO:common:created directory at: artifacts\prepare_callbacks\tensorboard_log_dir]
+[2024-08-26 16:26:22,923:INFO:common:created directory at: artifacts\training]
+[2024-08-26 16:26:23,167:WARNING:saving_utils:Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-08-26 16:26:25,285:ERROR:main:Unknown variable: <KerasVariable shape=(25088, 2), dtype=float32, path=dense/kernel>. This optimizer can only be called for the variables it was originally built with. When working with a new set of variables, you should recreate a new optimizer instance.]
+Traceback (most recent call last):
+  File "c:\Users\nilarghya\Desktop\Bird-Flu-classification\main.py", line 40, in <module>
+    model_trainer.main()
+  File "C:\Users\nilarghya\anaconda3\Lib\site-packages\cnnClassifier\pipeline\stage_03_training.py", line 26, in main
+    training.train(
+  File "C:\Users\nilarghya\anaconda3\Lib\site-packages\cnnClassifier\components\training.py", line 68, in train
+    self.model.fit(
+  File "C:\Users\nilarghya\anaconda3\Lib\site-packages\keras\src\utils\traceback_utils.py", line 122, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "C:\Users\nilarghya\anaconda3\Lib\site-packages\keras\src\optimizers\base_optimizer.py", line 237, in _check_variables_are_known
+    raise ValueError(
+ValueError: Unknown variable: <KerasVariable shape=(25088, 2), dtype=float32, path=dense/kernel>. This optimizer can only be called for the variables it was originally built with. When working with a new set of variables, you should recreate a new optimizer instance.
+[2024-08-26 16:27:30,452:INFO:utils:Note: NumExpr detected 12 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.]
+[2024-08-26 16:27:30,454:INFO:utils:NumExpr defaulting to 8 threads.]
+[2024-08-26 16:27:31,832:INFO:main:>>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-08-26 16:27:31,837:INFO:common:yaml file: config\config.yaml loaded successfully]
+[2024-08-26 16:27:31,840:INFO:common:yaml file: params.yaml loaded successfully]
+[2024-08-26 16:27:31,841:INFO:common:created directory at: artifacts]
+[2024-08-26 16:27:31,842:INFO:common:created directory at: artifacts/data_ingestion]
+[2024-08-26 16:27:31,843:INFO:data_ingestion:File already exists of size: ~ 11345 KB]
+[2024-08-26 16:27:32,470:INFO:main:>>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-08-26 16:27:32,470:INFO:main:*******************]
+[2024-08-26 16:27:32,470:INFO:main:>>>>>> stage Prepare base model started <<<<<<]
+[2024-08-26 16:27:32,474:INFO:common:yaml file: config\config.yaml loaded successfully]
+[2024-08-26 16:27:32,479:INFO:common:yaml file: params.yaml loaded successfully]
+[2024-08-26 16:27:32,518:INFO:common:created directory at: artifacts]
+[2024-08-26 16:27:32,529:INFO:common:created directory at: artifacts/prepare_base_model]
+[2024-08-26 16:27:33,542:WARNING:saving_api:You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2024-08-26 16:27:34,072:WARNING:saving_api:You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2024-08-26 16:27:34,285:INFO:main:>>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2024-08-26 16:27:34,286:INFO:main:*******************]
+[2024-08-26 16:27:34,286:INFO:main:>>>>>> stage Training started <<<<<<]
+[2024-08-26 16:27:34,291:INFO:common:yaml file: config\config.yaml loaded successfully]
+[2024-08-26 16:27:34,295:INFO:common:yaml file: params.yaml loaded successfully]
+[2024-08-26 16:27:34,296:INFO:common:created directory at: artifacts]
+[2024-08-26 16:27:34,298:INFO:common:created directory at: artifacts\prepare_callbacks\checkpoint_dir]
+[2024-08-26 16:27:34,299:INFO:common:created directory at: artifacts\prepare_callbacks\tensorboard_log_dir]
+[2024-08-26 16:27:34,300:INFO:common:created directory at: artifacts\training]
+[2024-08-26 16:27:34,691:WARNING:saving_utils:Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-08-26 16:27:38,281:ERROR:main:Unknown variable: <KerasVariable shape=(25088, 2), dtype=float32, path=dense/kernel>. This optimizer can only be called for the variables it was originally built with. When working with a new set of variables, you should recreate a new optimizer instance.]
+Traceback (most recent call last):
+  File "c:\Users\nilarghya\Desktop\Bird-Flu-classification\main.py", line 40, in <module>
+    model_trainer.main()
+  File "C:\Users\nilarghya\anaconda3\Lib\site-packages\cnnClassifier\pipeline\stage_03_training.py", line 26, in main
+    training.train(
+  File "C:\Users\nilarghya\anaconda3\Lib\site-packages\cnnClassifier\components\training.py", line 68, in train
+    self.model.fit(
+  File "C:\Users\nilarghya\anaconda3\Lib\site-packages\keras\src\utils\traceback_utils.py", line 122, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "C:\Users\nilarghya\anaconda3\Lib\site-packages\keras\src\optimizers\base_optimizer.py", line 237, in _check_variables_are_known
+    raise ValueError(
+ValueError: Unknown variable: <KerasVariable shape=(25088, 2), dtype=float32, path=dense/kernel>. This optimizer can only be called for the variables it was originally built with. When working with a new set of variables, you should recreate a new optimizer instance.
